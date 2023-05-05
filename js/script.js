@@ -103,16 +103,40 @@
 //     });
 // })
 
-let nr1 = [1,2,3,4,5]
-let nr2 = [6,7,8,9,10]
-console.log(`ARRAY 1 : ${nr1}`)
-console.log(`ARRAY 1 : ${nr2}`)
-//Concatenando arrays em um novo array com o operado SPREAD(...)
-let nr3 = [...nr1,...nr2]
-console.log(`NOVO ARRAY: ${nr3}`)
-//Imprimindo o novo array com forEach
-nr3.forEach(numeros=>{
-    // numeros.forEach((x)=>{
-        console.log("ITENS DO NOVO ARRAY: " + numeros)
-    // });
+// let nr1 = [1,2,3,4,5]
+// let nr2 = [6,7,8,9,10]
+// console.log(`ARRAY 1 : ${nr1}`)
+// console.log(`ARRAY 1 : ${nr2}`)
+// //Concatenando arrays em um novo array com o operado SPREAD(...)
+// let nr3 = [...nr1,...nr2]
+// console.log(`NOVO ARRAY: ${nr3}`)
+// //Imprimindo o novo array com forEach
+// nr3.forEach(numeros=>{
+//     // numeros.forEach((x)=>{
+//         console.log("ITENS DO NOVO ARRAY: " + numeros)
+//     // });
+// })
+
+// const imgElements = [...document.getElementsByTagName("img")]
+// // for (let index = 0;index < imgElements.length; index++){
+// //     console.log(imgElements[index].src)
+// // }
+// //const imgElementsArray = [...imgElements]
+// imgElements.forEach(img=>{
+//     img.setAttribute("width","10%")
+// })
+
+const elements = [...document.querySelectorAll(".teste")]
+console.log(elements)
+
+elements.forEach( el=>{
+    if(el.tagName.toLocaleLowerCase() == "img"){
+        console.log(el)
+    }
 })
+
+
+
+
+
+
