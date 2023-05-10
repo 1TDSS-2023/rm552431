@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js">
+
+    </script>
+    <title>Exercício 1</title>
+</head>
+<body>
+    <!-- Botão para mudar ser clicado e mudar a cor de fundo-->
+    <h1>Mudar cor de fundo</h1>
+    <button onclick="corBotao()">
+        Mudar a Cor do Fundo
+    </button>
+    <!--Adicionar um novo produto na lista ao digitar e clicar em cadastrar-->
+    <h1>Lista de produtos</h1>
+        <ul id="lista"></ul>
+        <form>
+            <label for="item">Digite um novo Produto:</label>
+            <input type="text" id="item">
+            <button type="button" onclick="adicionarProduto()">Cadastrar</button>
+        </form>
+
+    <!--Mudar imagem ao clicar no botão-->
+    <h1>Mudar Imagem</h1>
+    <img width="200px" height="100px" id="imagem" src="imgs/img1.jpg">
+    <br>
+    <button onclick="trocaImagem()">Trocar Imagem</button>
+
+    <!--Aparecer mensagem ao clicar no botão-->
+    <h1>Exibir Mensagem</h1>
+        <button onclick="exibeMensagem()">Clique para mostrar o texto</button>
+        <p id="mensagem"></p>
+
+    <!--Ocultar elemento ao clicar no botão-->
+    <h1>Ocultar Mensagem</h1>
+        <p id="elemento-oculto">
+            Estou aqui!
+        </p>
+
+        <button onclick="ocultaElemento()">Ocultar Elemento</button>
+    </div>
+
+
+</body>
+</html>
