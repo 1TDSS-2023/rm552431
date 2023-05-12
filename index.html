@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MEU-SITE</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/script.js"></script>
+    
+    <script src="./js/script.js" defer></script>
 
-    <!-- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -28,59 +25,63 @@
 
     <h2 class="tit-sec">Seçao de Fotos</h2>
 
-    <!-- <button onclick="alert(this.innerText)">Olá Mundo!</button> -->
+    <!-- <button onclick="alert(this.innerText)">Olá Mundo</button> -->
 
-    <!-- <script>
+    
+    <button value="click" id="meu-btn">Click</button>
+    
+    <script>
+        //COMENTÁRIO DE LINHA
+        /*
+            COMENTÁRIO DE BLOCO
+        */
 
-       //COMENTÁRIO DE LINHA
-       
-       /*
+        // //Declarar variáveis com a palavra reservada ( var ) :
 
-       COMENTÁRIO DE BLOCO
-       
-       */
+        // var nr1 = 10;
+        // var nr2 = 5;
 
-       //Declarar Variaveis com a palavra reservada (var)
+        // //Imprimindo variáveis com a classe ( console ):
+        // //VAMOS CRIAR AS OPERAÇÕES ARITMÉTICAS BÁSICAS
 
-       var nr1 = 10;
-       var nr2 = 5;
+        // //ADIÇÃO
+        // console.log(nr1+nr2);
+        // //SUBTRAÇÃO
+        // console.log(nr1-nr2);
+        // //MULTIPLICAÇÃO
+        // console.log(nr1*nr2);
+        // //DIVISÃO
+        // console.log(nr1/nr2);
 
-       //Imprimindo variaveis com a classe (console):
-       //Vamos criar operações aritimédicas
+        // //REPITA AS OPERAÇÕES AGORA ADICIONANDO O TEXTO RESULTADO ANTES DAS OPERAÇÕES:
+        // //ADIÇÃO
+        // //CONCATENAÇÃO
+        // console.log("RESULTADO : " + (nr1+nr2));
+        // console.log(`RESULTADO INTERPOLADO : ${nr1+nr2}`);
+        // //SUBTRAÇÃO
+        // //CONCATENAÇÃO
+        // console.log("RESULTADO : " , (nr1-nr2));
+        // console.log(`RESULTADO INTERPOLADO : ${nr1-nr2}`);
+        // //MULTIPLICAÇÃO
+        // //CONCATENAÇÃO
+        // console.log("RESULTADO : " + (nr1*nr2));
+        // console.log(`RESULTADO INTERPOLADO : ${nr1*nr2}`);
+        // //DIVISÃO
+        // //CONCATENAÇÃO
+        // console.log("RESULTADO : " + (nr1/nr2));
+        // console.log(`RESULTADO INTERPOLADO : ${nr1/nr2}`);
 
-       //ADIÇÃO
-       console.log(nr1+nr2);
 
-       //SUBTRAÇÃO
-       console.log(nr1-nr2);
 
-       //MULTIPLICAÇÃO
-       console.log(nr1*nr2);
 
-       //DVISÃO
-       console.log(nr1/nr2);
 
-       //REPITA AS OPERAÇÕES AGORA ADICIONANDO O TEXTO RESULTADO ANTES DAS OPERAÇÕES
 
-       console.log("RESULTADO " + (nr1 + nr2));
-       console.log(`RESULTADO INTERPOLADO : ${nr1 + nr2}`);
 
-       //SUBTRAÇÃO
-       console.log("RESULTADO " + (nr1-nr2));
-       console.log(`RESULTADO INTERPOLADO : ${nr1 - nr2}`);
+    </script>
 
-       //MULTIPLICAÇÃO
-       console.log("RESULTADO " + (nr1*nr2));
-       console.log(`RESULTADO INTERPOLADO : ${nr1 * nr2}`);
-
-       //DVISÃO
-       console.log("RESULTADO " + (nr1/nr2));
-       console.log(`RESULTADO INTERPOLADO : ${nr1 / nr2}`);
-
-    </script> -->
 
     <section class="conteudo">
-        <div>
+        <div class="teste">
             <img src="./img/lobo1.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
@@ -93,7 +94,7 @@
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo4.jpg" alt="Lobo">
+            <img class="teste" src="./img/lobo4.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
         <div>
@@ -107,7 +108,7 @@
     </section>
 
 
-    <table>
+    <table class="teste">
         <tr>
             <th>Nome</th>
             <th>Espécie</th>
@@ -147,15 +148,15 @@
     </table>
 
     <footer class="rodape">
-        <h2>Fale Conosco</h2>
+        <h2 class="teste">Fale Conosco</h2>
 
-        <nav>
+        <nav class="teste">
             <a href="#"><img src="./img/social-1-24x.png" alt="Logo Github"></a>
             <a href="#"><img src="./img/social-2-24x.png" alt="Logo facebook"></a>
             <a href="#"><img src="./img/social-3-24x.png" alt="Logo twitter"></a>
         </nav>
     </footer>
-
+    
 </body>
 
 </html>
